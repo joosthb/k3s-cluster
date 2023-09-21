@@ -6,11 +6,11 @@ gitops:
 apps:
     # argo-cd
   - name: argo-cd
-    namespace: argo-cd
+    namespace: default
     path: system/argo-cd
     syncWave: 0
     # root app of apps
   - name: root
-    namespace: homelab
+    namespace: default
     path: system/root
     syncWave: 1
