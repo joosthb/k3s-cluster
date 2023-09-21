@@ -1,0 +1,16 @@
+gitops:
+  repo: 'git@github.com:joosthb/k3s-cluster'
+  revision: master
+
+# List of application corresponding to different sync waves
+apps:
+    # argo-cd
+  - name: argo-cd
+    namespace: argo-cd
+    path: system/argo-cd
+    syncWave: 0
+    # root app of apps
+  - name: root
+    namespace: homelab
+    path: system/root
+    syncWave: 1
