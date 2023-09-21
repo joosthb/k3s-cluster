@@ -1,4 +1,5 @@
 gitops:
+  # Need to add ssh-key to do ssh
   # repo: 'git@github.com:joosthb/k3s-cluster'
   repo: https://github.com/joosthb/k3s-cluster
   revision: main

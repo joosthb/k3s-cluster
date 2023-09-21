@@ -59,8 +59,6 @@ Copy config to workstation.
 
 
 ```
-# enter dir:
-
 # add repo
 helm repo add argo-cd https://argoproj.github.io/argo-helm
 
@@ -79,15 +77,12 @@ kubectl apply -f ~/argocd-repositories.yaml
 #Deploy root app (app-of-apps app)
 helm template system/root | kubectl apply -f -  
 
-# get password
-kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d > ~/pass
+# copy password to clipboard (Mac)
+kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d | pbcopy
 
 # Add argocd.test to local hostfile Use this password to logon to; http://argocd.test
 
 # delete argocd from helm (it manages itself now)
 kubectl delete secret -l owner=helm,name=argo-cd
-
-# clean up
-rm -rf ~/{app-of-apps-home,apps-home}
 
 ```
