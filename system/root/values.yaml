@@ -6,7 +6,7 @@ gitops:
 apps:
     # argo-cd
   - name: argo-cd
-    namespace: default
+    namespace: argocd
     path: system/argo-cd
     syncWave: 0
     # root app of apps

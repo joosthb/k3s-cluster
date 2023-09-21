@@ -21,5 +21,4 @@ argo-cd:
       annotations:
         cert-manager.io/cluster-issuer: letsencrypt-prod
       hosts:
-        - argocd.derby.home
         - argocd.home.lednakirf.nl
