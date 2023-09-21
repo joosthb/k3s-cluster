@@ -1,12 +1,13 @@
 gitops:
-  repo: 'git@github.com:joosthb/k3s-cluster'
-  revision: master
+  # repo: 'git@github.com:joosthb/k3s-cluster'
+  repo: https://github.com/joosthb/k3s-cluster
+  revision: main
 
 # List of application corresponding to different sync waves
 apps:
     # argo-cd
   - name: argo-cd
-    namespace: argocd
+    namespace: default
     path: system/argo-cd
     syncWave: 0
     # root app of apps

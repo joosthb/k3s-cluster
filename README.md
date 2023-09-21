@@ -60,7 +60,6 @@ Copy config to workstation.
 
 ```
 # enter dir:
-cd ~/apps-home
 
 # add repo
 helm repo add argo-cd https://argoproj.github.io/argo-helm
@@ -77,11 +76,8 @@ sleep 30
 # configure private repo's on argocd (add private keys first.)
 kubectl apply -f ~/argocd-repositories.yaml
 
-# enter dir:
-cd ~/app-of-apps-home
-
 #Deploy root app (app-of-apps app)
-helm template apps/ | kubectl apply -f -
+helm template system/root | kubectl apply -f -  
 
 # get password
 kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d > ~/pass
