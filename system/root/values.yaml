@@ -23,6 +23,6 @@ apps:
     syncWave: 1
     # whoami app
   - name: whoami
-    namespace: whoami
+    namespace: default
     path: applications/whoami
     syncWave: 1
