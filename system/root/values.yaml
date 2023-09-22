@@ -17,6 +17,11 @@ apps:
     path: system/root
     syncWave: 1
     # whoami app
+  - name: cert-manager
+    namespace: default
+    path: system/cert-manager
+    syncWave: 1
+    # whoami app
   - name: whoami
     namespace: whoami
     path: applications/whoami
