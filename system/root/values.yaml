@@ -16,3 +16,8 @@ apps:
     namespace: default
     path: system/root
     syncWave: 1
+    # whoami app
+  - name: whoami
+    namespace: whoami
+    path: applications/whoami
+    syncWave: 1
