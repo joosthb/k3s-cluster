@@ -20,4 +20,4 @@ spec:
              service:
                name: whoami
                port:
-                 name: web
+                 name: 80
