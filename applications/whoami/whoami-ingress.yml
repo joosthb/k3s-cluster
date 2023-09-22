@@ -9,7 +9,7 @@ spec:
   tls:
     - hosts:
         - whoami.home.lednakirf.nl
-      secretName: tls-whoami-ingress-dns
+      secretName: tls-whoami-ingress-http
   rules:
     - host: whoami.home.lednakirf.nl
       http:
