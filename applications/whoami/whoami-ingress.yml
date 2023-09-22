@@ -8,7 +8,7 @@ metadata:
 spec:
  tls:
    - hosts:
-       - whoami.example.com
+       - whoami.home.lednakirf.nl
      secretName: tls-whoami-ingress-dns
  rules:
    - host: whoami.home.lednakirf.nl
