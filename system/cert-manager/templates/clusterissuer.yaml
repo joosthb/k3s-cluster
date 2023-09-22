@@ -11,16 +11,16 @@ spec:
       name: letsencrypt-prod
     
     solvers:
-      - http01:
-          ingress:
-            ingressClassName: traefik
-      # - dns01:
-      #     cloudflare:
-      #       email: cloudflare@hendricksen.net
-      #       apiTokenSecretRef:
-      #         name: cloudflare-api-token-secret
-      #         key: api-token
-      #   selector:
-      #     dnsZones:
-      #     - 'home.lednakirf.nl'
-      #     - '*.home.lednakirf.nl'
+      # - http01:
+      #     ingress:
+      #       ingressClassName: traefik
+      - dns01:
+          cloudflare:
+            email: cloudflare@hendricksen.net
+            apiTokenSecretRef:
+              name: cloudflare-api-token-secret
+              key: api-token
+        selector:
+          dnsZones:
+          - 'home.lednakirf.nl'
+          - '*.home.lednakirf.nl'
