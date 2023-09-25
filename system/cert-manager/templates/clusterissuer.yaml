@@ -11,9 +11,6 @@ spec:
       name: letsencrypt-prod
     
     solvers:
-      # - http01:
-      #     ingress:
-      #       ingressClassName: traefik
       - dns01:
           cloudflare:
             email: cloudflare@hendricksen.net
