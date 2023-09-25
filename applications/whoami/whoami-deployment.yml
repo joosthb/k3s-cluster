@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: whoami-deployment
 spec:
-  replicas: 10
+  replicas: 4
   selector:
     matchLabels:
       app: whoami
