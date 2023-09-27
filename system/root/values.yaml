@@ -26,3 +26,8 @@ apps:
     namespace: default
     path: applications/whoami
     syncWave: 1
+    # k8s dashboard
+  - name: dashboard
+    namespace: kubernetes-dashboard
+    path: system/dashboard
+    syncWave: 1
