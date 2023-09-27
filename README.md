@@ -70,3 +70,9 @@ kubectl delete secret -l owner=helm,name=argo-cd
 - Letsencrypt via Cloudflare
 - Storage (ceph/rook/longhorn?)
 - Backups
+
+# Misc.
+## to get dashboard token
+```
+kubectl -n kubernetes-dashboard create token admin-user
+```
