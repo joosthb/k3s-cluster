@@ -17,7 +17,7 @@ spec:
               service:
                 name: kubernetes-dashboard
                 port:
-                  number: 443
+                  number: 8443
             path: /
             pathType: Prefix
   tls:
