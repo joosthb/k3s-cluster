@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: whoami.home.lednakirf.nl
+    - host: dashboard.home.lednakirf.nl
       http:
         paths:
           - backend:
@@ -23,4 +23,4 @@ spec:
   tls:
     - hosts:
         - dashboard.home.lednakirf.nl
-      secretName: tls-whoami-ingress-http
+      secretName: tls-dashboard-ingress-http
